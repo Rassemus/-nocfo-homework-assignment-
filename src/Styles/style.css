@@ -1,0 +1,71 @@
+
+:root {
+    --transparent-primary-color: #1b97f546;
+    --primary-color: #1b98f5;
+    --primary-hover-color: #11629f;
+    --danger-color: #cc0000;
+    --bg-color: #1b98f511;
+    --moderate-color: #ffcc00;
+    --low-color:#006600;
+    --text-color: #000;
+  }
+
+  @media screen and (min-width: 640px) {
+    .row-div{
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+  }
+  @media screen and (max-width: 640px){
+    .aling-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aling-center > p {
+        margin:1px;
+    }
+
+    .column-div{
+        flex-direction: column;
+    }
+  }
+
+.scroll-div{
+    position:relative;
+    width: 100%;
+    height: 6em;
+    padding-top: 0.2em;
+    overflow-x: auto;
+}
+
+.floatig-btn{
+    position:fixed;
+    right: 20px;
+}
+
+.row-div > p {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.scroll-div::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+    background-color: var(--transparent-primary-color);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .scroll-div::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+  }
+
+  .scroll-div::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-hover-color);
+  }
