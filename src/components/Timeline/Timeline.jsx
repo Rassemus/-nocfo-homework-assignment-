@@ -221,7 +221,7 @@ export const Timeline = ({ items }) => {
 const StyledPlaceholder = styled.div`
   border-radius: 1rem;
   background: ${Colors.bgColor};
-  border: 3px solid #1b98f5;
+  border: 3px solid ${Colors.primary};
   min-height: 6rem;
   max-height: 8rem
   overflow: hidden;
@@ -231,8 +231,8 @@ const InfoContainer = styled.div`
   position:relative;
   margin:5em auto;
   border-radius: 1rem;
-  background: #1b98f511;
-  border: 3px solid #1b98f5;
+  background: ${Colors.bgColor};
+  border: 3px solid ${Colors.primary};
   width: 20em;
 `
 
@@ -250,7 +250,7 @@ const Circle = styled.div`
   transform: translateY(-50%);
   background: #FFF;
   cursor: pointer;
-  transition: border 0.2s; /* Lisää siirtymä, jotta muutos olisi pehmeämpi */
+  transition: border 0.2s;
 
   &:hover {
     border: 3px solid ${(props) => props.isalert ? Colors.danger : Colors.primary};
@@ -270,8 +270,8 @@ const Line = styled.div`
 
 const FloatingButton = styled.button`
   position: absolute;
-  top: 4px; /* Välimatka yläreunaan */
-  right: 4px; /* Välimatka oikeaan reunaan */
+  top: 4px;
+  right: 4px;
   background-color: ${Colors.bgColor};
   color: #000;
   border: none;
