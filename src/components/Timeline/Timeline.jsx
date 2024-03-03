@@ -233,7 +233,7 @@ const InfoContainer = styled.div`
   border-radius: 1rem;
   background: #1b98f511;
   border: 3px solid #1b98f5;
-  max-width: 25vw;
+  width: 20em;
 `
 
 const Circle = styled.div`
